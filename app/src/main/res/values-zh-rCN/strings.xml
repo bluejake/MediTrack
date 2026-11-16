@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">服药记录</string>
+
+    <string name="tab_today">今天</string>
+    <string name="tab_meds">用药</string>
+    <string name="tab_history">历史</string>
+    <string name="tab_settings">设置</string>
+
+    <string name="greeting_morning">早上好</string>
+    <string name="greeting_afternoon">下午好</string>
+    <string name="greeting_evening">晚上好</string>
+    <string name="greeting_night">夜深了</string>
+
+    <string name="today_progress_hint">今日服药完成情况</string>
+    <string name="section_pending">待服用</string>
+    <string name="section_recorded">已记录</string>
+    <string name="section_as_needed">按需服用</string>
+    <string name="action_take">记录</string>
+    <string name="action_skip">跳过</string>
+    <string name="action_taken">已服用</string>
+    <string name="action_skipped">已跳过</string>
+    <string name="status_overdue">已逾期</string>
+    <string name="empty_today">今天没有需要服用的药物</string>
+    <string name="empty_today_hint">点击下方「用药」添加你的第一种药物</string>
+
+    <string name="add_med">添加药物</string>
+    <string name="edit_med">编辑药物</string>
+    <string name="hint_name">药物名称</string>
+    <string name="hint_strength">剂量 / 规格（如 1 片、10 mg）</string>
+    <string name="form">剂型</string>
+    <string name="shape">形状</string>
+    <string name="color">颜色</string>
+    <string name="schedule_title">服用计划</string>
+    <string name="add_time">添加时间</string>
+    <string name="as_needed">按需服用（无固定时间）</string>
+    <string name="remind_switch">服药提醒</string>
+    <string name="notes">备注</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="start_date">开始日期</string>
+    <string name="duration">疗程天数（0 表示长期）</string>
+
+    <string name="times_per_day">每日 %1$d 次</string>
+    <string name="as_needed_short">按需服用</string>
+    <string name="dose_format">%1$s · %2$s</string>
+
+    <string name="history_title">服药历史</string>
+    <string name="stats_taken">已服用</string>
+    <string name="stats_skipped">已跳过</string>
+    <string name="stats_missed">漏服</string>
+    <string name="stats_rate">依从率</string>
+    <string name="stats_expected">应服次数</string>
+    <string name="empty_history">暂无服药记录</string>
+    <string name="empty_meds">还没有添加药物，点击右下角按钮添加</string>
+    <string name="as_needed_desc">仅在需要时手动记录，不生成固定计划</string>
+
+    <string name="settings_notify">服药通知</string>
+    <string name="settings_notify_desc">到点推送服药提醒</string>
+    <string name="settings_lead">提前提醒</string>
+    <string name="settings_snooze">稍后提醒时长</string>
+    <string name="settings_check_title">提醒自检</string>
+    <string name="settings_check_desc">到点没提醒？逐项检查以下状态，点击可跳转对应设置页</string>
+    <string name="settings_check_notify">通知权限</string>
+    <string name="settings_check_exact">精确闹钟权限</string>
+    <string name="settings_check_channel">提醒渠道</string>
+    <string name="settings_check_battery">电池优化白名单</string>
+    <string name="settings_check_fsi">锁屏全屏提醒</string>
+    <string name="settings_check_overlay">后台弹出提醒页</string>
+    <string name="settings_check_ok">✓ 正常</string>
+    <string name="settings_check_bad">✗ 未开启</string>
+    <string name="settings_check_fsi_ok">✓ 可用</string>
+    <string name="settings_test_reminder">发送测试提醒（10 秒后）</string>
+    <string name="settings_test_sent">测试提醒已设置，10 秒后触发，请留意通知与声音</string>
+    <string name="alert_close">关闭</string>
+    <string name="alert_test_title">测试提醒</string>
+    <string name="alert_test_body">锁屏全屏提醒测试：看到本页面即表示提醒链路正常</string>
+    <string name="settings_battery_dialog_title">加入电池优化白名单</string>
+    <string name="settings_battery_dialog_msg">部分机型（如荣耀 MagicOS、华为 EMUI）的省电策略会冻结后台应用，导致闹钟不触发。建议允许本应用在后台运行，并将电池优化设为「无限制」。</string>
+    <string name="settings_next_none">当前没有待提醒的计划</string>
+    <string name="settings_next_item">%1$s %2$s → %3$s</string>
+    <string name="settings_import">导入服药记录（CSV）</string>
+    <string name="settings_import_msg">从 CSV 文件导入服药记录。药物按名称匹配，匹配不到将自动创建；记录追加到现有数据，不会覆盖。</string>
+    <string name="settings_export">导出服药记录（CSV）</string>
+    <string name="settings_export_desc">把全部服药日志导出为 CSV 文件</string>
+    <string name="settings_demo">载入示例数据</string>
+    <string name="settings_demo_desc">快速体验：生成 3 种示例药物与 10 天记录</string>
+    <string name="settings_clear">清空所有数据</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_about_desc">服药记录 v1.0 · 本地存储，数据不上传</string>
+
+    <string name="settings_appearance">外观</string>
+    <string name="settings_glass">液态玻璃效果</string>
+    <string name="settings_glass_desc">全量真实折射：导航、按钮、卡片、弹窗；参数滑杆在本卡下方</string>
+    <string name="settings_glass_diagnostic">诊断模式</string>
+    <string name="settings_glass_diagnostic_desc">夸大折射与色散，便于真机观察效果</string>
+    <string name="settings_glass_guard_notice">检测到上次使用中发生异常，已自动关闭玻璃特效以保证正常使用。问题修复后可随时在下方重新开启。</string>
+
+    <string name="settings_glass_tune">玻璃参数调节</string>
+    <string name="settings_glass_tune_desc">实时生效，仅生产参数可调；诊断模式使用固定夸张值</string>
+    <string name="glass_adj_blur">模糊强度</string>
+    <string name="glass_adj_saturation">饱和度</string>
+    <string name="glass_adj_refraction">折射高度</string>
+    <string name="glass_adj_edge">边缘高光</string>
+    <string name="glass_adj_aberration">彩边（色差）</string>
+    <string name="glass_adj_dispersion">色散强度</string>
+    <string name="settings_glass_reset">恢复默认参数</string>
+
+    <string-array name="bottom_tabs">
+        <item>今天</item>
+        <item>用药</item>
+        <item>历史</item>
+        <item>设置</item>
+    </string-array>
+
+    <string name="notif_title">该服药了</string>
+    <string name="notif_body">%1$s · %2$s（计划 %3$s）</string>
+    <string name="notif_action_taken">已服用</string>
+    <string name="notif_action_snooze">稍后</string>
+    <string name="channel_reminder">服药提醒</string>
+    <string name="channel_desc">按时提醒你服用药物</string>
+
+    <string name="confirm_delete_title">删除药物</string>
+    <string name="confirm_delete_msg">删除「%1$s」会同时删除它的服药记录，确定继续吗？</string>
+    <string name="confirm_clear_title">清空所有数据</string>
+    <string name="confirm_clear_msg">将删除全部药物与服药记录，且无法恢复。</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="saved">已保存</string>
+    <string name="deleted">已删除</string>
+    <string name="exported">已导出：%1$s</string>
+    <string name="name_required">请填写药物名称</string>
+    <string name="time_required">请至少添加一个服用时间</string>
+    <string name="save_passed_hint">今天的服用时间已过，提醒将从明天开始</string>
+    <string name="banner_notify_title">提醒无法送达：通知已被关闭</string>
+    <string name="banner_notify_desc">提醒已正常设置，但系统通知被关闭，到点不会有任何提示。请在设置中允许本应用发送通知。</string>
+    <string name="banner_notify_action">去开启通知</string>
+    <string name="undo">撤销</string>
+    <string name="undo_deleted_msg">已删除「%1$s」</string>
+    <string name="recorded_at">记录于 %1$s</string>
+    <string name="detail_title">药物详情</string>
+    <string name="detail_adherence">近 30 天依从率</string>
+    <string name="detail_logs">服药记录</string>
+    <string name="no_logs">还没有服药记录</string>
+    <string name="next_dose">下次：%1$s</string>
+    <string name="permission_notify_hint">请允许通知权限，以便按时收到服药提醒</string>
+
+    <!-- 审计 P1-2：补齐此前硬编码在 Kotlin 里的文案 -->
+    <string name="exact_alarm_dialog_title">需要「闹钟和提醒」权限</string>
+    <string name="exact_alarm_dialog_msg">为了在准确的服药时间提醒你，请在系统设置中允许本应用设置闹钟和提醒。</string>
+    <string name="go_settings">去设置</string>
+    <string name="notif_test_body">这是一条测试提醒。如果你看到了这条通知并听到声音，说明服药提醒链路正常。</string>
+    <string name="alert_plan_prefix">计划 %1$s</string>
+    <string name="crash_title">应用崩溃了</string>
+    <string name="crash_copy">复制日志</string>
+    <string name="crash_copied">已复制崩溃日志</string>
+    <string name="crash_log_file">日志文件：%1$s</string>
+
+    <!-- 审计 P1-2（第二批）：主页面 / 编辑页 / 选择器 / 设置页 -->
+    <string name="today_no_plan">今天暂无计划</string>
+    <string name="today_progress_fmt">共 %1$d 次 · 已完成 %2$d</string>
+    <string name="as_needed_tag">按需</string>
+    <string name="history_prev_month">上个月</string>
+    <string name="history_next_month">下个月</string>
+    <string name="history_ym_fmt">%1$s 年 %2$s 月</string>
+    <string name="history_recorded_suffix">%1$s 记录</string>
+    <string name="meds_times_fmt">每日 %1$d 次（%2$s）</string>
+    <string name="meds_duration_days">疗程 %1$d 天</string>
+    <string name="list_separator">、</string>
+    <string name="section_other">其他</string>
+    <string name="section_theme">主题</string>
+    <string name="section_general">通用</string>
+    <string name="settings_language">语言</string>
+    <string name="language_system">跟随系统</string>
+    <string name="section_data">数据</string>
+    <string name="settings_theme_style">主题风格</string>
+    <string name="settings_current_fmt">当前：%1$s</string>
+    <string name="settings_lead_current">当前：%1$d 分钟</string>
+    <string name="settings_next_header">接下来的提醒：</string>
+    <string name="theme_name_miuix">MIUIX（小米 HyperOS）</string>
+    <string name="toast_export_failed">导出失败：%1$s</string>
+    <string name="toast_storage_denied">未获得存储权限，无法写入下载目录</string>
+    <string name="toast_import_open_failed">无法打开所选文件</string>
+    <string name="toast_import_too_large">文件过大（超过 4MB）</string>
+    <string name="toast_import_done">导入完成：%1$d 条记录，新建 %2$d 种药物，跳过 %3$d 行</string>
+    <string name="toast_import_failed">导入失败：%1$s</string>
+    <string name="settings_import_card_desc">按名称匹配药物，追加到现有数据</string>
+    <string name="settings_demo_card_desc">快速体验：生成示例药物与 10 天记录</string>
+
+    <string-array name="history_weekdays">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>日</item>
+    </string-array>
+
+    <!-- i18n 新增（v1.1） -->
+
+    <string name="perm_exact_title">需要「闹钟和提醒」权限</string>
+    <string name="perm_exact_msg">为了在准确的服药时间提醒你，请在系统设置中允许本应用设置闹钟和提醒。</string>
+    <string name="perm_notify_title">需要通知权限</string>
+    <string name="perm_notify_msg">没有通知权限将无法收到服药提醒。请在系统设置中允许本应用发送通知。</string>
+
+    <string name="alert_plan">计划 %1$s</string>
+
+    <string name="detail_freq">每日 %1$d 次（%2$s）</string>
+    <string name="detail_course">疗程 %1$d 天</string>
+    <string name="detail_since">自 %1$s 起</string>
+
+    <string-array name="weekday_names">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string-array name="color_names">
+        <item>蓝</item>
+        <item>紫</item>
+        <item>青</item>
+        <item>绿</item>
+        <item>黄</item>
+        <item>橙</item>
+        <item>红</item>
+        <item>粉</item>
+    </string-array>
+
+    <string-array name="icon_names">
+        <item>片剂</item>
+        <item>胶囊</item>
+        <item>瓶装</item>
+        <item>滴剂</item>
+        <item>注射</item>
+        <item>吸入</item>
+    </string-array>
+
+    <string-array name="form_names">
+        <item>片剂</item>
+        <item>胶囊</item>
+        <item>颗粒/冲剂</item>
+        <item>口服液</item>
+        <item>注射剂</item>
+        <item>滴剂</item>
+        <item>吸入剂</item>
+        <item>外用</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 设置页补充（i18n 补齐） -->
+    <string name="settings_clear_desc">将删除全部药物与服药记录，且无法恢复</string>
+    <string name="settings_minutes_fmt">%1$d 分钟</string>
+    <string name="settings_theme_dialog_title">选择主题</string>
+    <string name="theme_name_material">Material Design</string>
+    <string name="theme_name_miuix_short">MIUIX（小米）</string>
+    <string name="settings_import_pick">选择文件</string>
+    <string name="settings_demo_confirm">当前已有数据，是否先清空再载入示例数据？</string>
+    <string name="toast_cleared">已清空</string>
+    <string name="toast_demo_loaded">示例数据已载入</string>
+    <string name="settings_next_today">今天 %1$s</string>
+    <string name="settings_next_tomorrow">明天 %1$s</string>
+    <string name="settings_next_date">%1$d月%2$d日 %3$s</string>
+    <string name="export_file_prefix">服药记录</string>
+    <string name="backup_dir_name">服药记录备份</string>
+    <string name="demo_med1_name">二甲双胍片</string>
+    <string name="demo_med1_strength">0.5 g · 1 片</string>
+    <string name="demo_med1_notes">随餐服用，减少胃肠道不适</string>
+    <string name="demo_med2_name">阿托伐他汀钙片</string>
+    <string name="demo_med2_strength">20 mg · 1 片</string>
+    <string name="demo_med2_notes">每晚睡前服用</string>
+    <string name="demo_med3_name">维生素C片</string>
+    <string name="demo_med3_strength">100 mg · 1 片</string>
+    <string name="demo_med4_name">布洛芬胶囊</string>
+    <string name="demo_med4_strength">0.3 g · 1 粒</string>
+    <string name="demo_med4_notes">疼痛时服用，24 小时内不超过 4 次</string>
+    <string name="settings_about_title">服药记录 v1.0</string>
+    <string name="settings_about_local">本地存储，数据不上传</string>
+    <string name="toast_undone">已撤销</string>
+    <string name="stat_short_expected">应服</string>
+    <string name="stat_short_taken">已服</string>
+    <string name="stat_short_skipped">跳过</string>
+</resources>

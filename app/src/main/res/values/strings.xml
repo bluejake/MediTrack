@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Medication Log</string>
+
+    <string name="tab_today">Today</string>
+    <string name="tab_meds">Medications</string>
+    <string name="tab_history">History</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_night">Late night</string>
+
+    <string name="today_progress_hint">Today\'s medication progress</string>
+    <string name="section_pending">To take</string>
+    <string name="section_recorded">Recorded</string>
+    <string name="section_as_needed">As needed</string>
+    <string name="action_take">Log</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_taken">Taken</string>
+    <string name="action_skipped">Skipped</string>
+    <string name="status_overdue">Overdue</string>
+    <string name="empty_today">No medications to take today</string>
+    <string name="empty_today_hint">Tap \"Medications\" below to add your first medication</string>
+
+    <string name="add_med">Add Medication</string>
+    <string name="edit_med">Edit Medication</string>
+    <string name="hint_name">Medication name</string>
+    <string name="hint_strength">Dose / strength (e.g. 1 pill, 10 mg)</string>
+    <string name="form">Form</string>
+    <string name="shape">Shape</string>
+    <string name="color">Color</string>
+    <string name="schedule_title">Schedule</string>
+    <string name="add_time">Add time</string>
+    <string name="as_needed">As needed (no fixed time)</string>
+    <string name="remind_switch">Reminders</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="start_date">Start date</string>
+    <string name="duration">Course duration in days (0 = long-term)</string>
+
+    <string name="times_per_day">Daily %1$d times</string>
+    <string name="as_needed_short">As needed</string>
+    <string name="dose_format">%1$s · %2$s</string>
+
+    <string name="history_title">History</string>
+    <string name="stats_taken">Taken</string>
+    <string name="stats_skipped">Skipped</string>
+    <string name="stats_missed">Missed</string>
+    <string name="stats_rate">Adherence</string>
+    <string name="stats_expected">Expected doses</string>
+    <string name="empty_history">No records yet</string>
+    <string name="empty_meds">No medications added yet. Tap the button at the bottom right to add one.</string>
+    <string name="as_needed_desc">Manually logged only when needed; no fixed schedule.</string>
+
+    <string name="settings_notify">Medication notifications</string>
+    <string name="settings_notify_desc">Push reminders at scheduled times</string>
+    <string name="settings_lead">Lead time</string>
+    <string name="settings_snooze">Snooze duration</string>
+    <string name="settings_check_title">Reminder self-check</string>
+    <string name="settings_check_desc">No reminder at the scheduled time? Check each status below; tap to open the relevant settings.</string>
+    <string name="settings_check_notify">Notification permission</string>
+    <string name="settings_check_exact">Exact alarm permission</string>
+    <string name="settings_check_channel">Reminder channel</string>
+    <string name="settings_check_battery">Battery optimization whitelist</string>
+    <string name="settings_check_fsi">Lock-screen full-screen alert</string>
+    <string name="settings_check_overlay">Pop up reminder page</string>
+    <string name="settings_check_ok">✓ OK</string>
+    <string name="settings_check_bad">✗ Off</string>
+    <string name="settings_check_fsi_ok">✓ Available</string>
+    <string name="settings_test_reminder">Send test reminder (in 10s)</string>
+    <string name="settings_test_sent">Test reminder scheduled; it will trigger in 10s. Watch for the notification and sound.</string>
+    <string name="alert_close">Close</string>
+    <string name="alert_test_title">Test Reminder</string>
+    <string name="alert_test_body">Lock-screen full-screen alert test: seeing this page means the reminder chain works.</string>
+    <string name="settings_battery_dialog_title">Add to battery optimization whitelist</string>
+    <string name="settings_battery_dialog_msg">On some devices (e.g. Honor MagicOS, Huawei EMUI), battery saver freezes background apps and alarms won\'t fire. Allow this app to run in the background and set battery optimization to \"Unrestricted\".</string>
+    <string name="settings_next_none">No upcoming reminders</string>
+    <string name="settings_next_item">%1$s %2$s → %3$s</string>
+    <string name="settings_import">Import records (CSV)</string>
+    <string name="settings_import_msg">Import medication records from a CSV file. Medications are matched by name (created automatically if not found); records are appended to existing data and never overwritten.</string>
+    <string name="settings_export">Export records (CSV)</string>
+    <string name="settings_export_desc">Export all medication logs to a CSV file</string>
+    <string name="settings_demo">Load sample data</string>
+    <string name="settings_demo_desc">Quick preview: generates 3 sample medications and 10 days of records</string>
+    <string name="settings_clear">Clear all data</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_desc">Medication Log v1.0 · Stored locally, never uploaded</string>
+
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_glass">Liquid glass effect</string>
+    <string name="settings_glass_desc">Full real refraction: navigation, buttons, cards, dialogs; sliders below this card</string>
+    <string name="settings_glass_diagnostic">Diagnostic mode</string>
+    <string name="settings_glass_diagnostic_desc">Exaggerates refraction and dispersion for on-device inspection</string>
+    <string name="settings_glass_guard_notice">An abnormality was detected during the last session; the liquid glass effect was automatically disabled to keep the app usable. Once the issue is resolved, you can re-enable it below at any time.</string>
+
+    <string name="settings_glass_tune">Glass tuning</string>
+    <string name="settings_glass_tune_desc">Applies live; only production parameters are adjustable; diagnostic mode uses fixed exaggerated values</string>
+    <string name="glass_adj_blur">Blur intensity</string>
+    <string name="glass_adj_saturation">Saturation</string>
+    <string name="glass_adj_refraction">Refraction height</string>
+    <string name="glass_adj_edge">Edge highlight</string>
+    <string name="glass_adj_aberration">Chromatic edge</string>
+    <string name="glass_adj_dispersion">Dispersion</string>
+    <string name="settings_glass_reset">Reset to defaults</string>
+
+    <string-array name="bottom_tabs">
+        <item>Today</item>
+        <item>Medications</item>
+        <item>History</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="notif_title">Time to take your medication</string>
+    <string name="notif_body">%1$s · %2$s (scheduled %3$s)</string>
+    <string name="notif_action_taken">Taken</string>
+    <string name="notif_action_snooze">Later</string>
+    <string name="channel_reminder">Medication reminder</string>
+    <string name="channel_desc">Reminds you to take medication on time</string>
+
+    <string name="confirm_delete_title">Delete medication</string>
+    <string name="confirm_delete_msg">Deleting \"%1$s\" will also remove its medication records. Continue?</string>
+    <string name="confirm_clear_title">Clear all data</string>
+    <string name="confirm_clear_msg">This will delete all medications and records, and cannot be undone.</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="saved">Saved</string>
+    <string name="deleted">Deleted</string>
+    <string name="exported">Exported: %1$s</string>
+    <string name="name_required">Please enter the medication name</string>
+    <string name="time_required">Please add at least one time</string>
+    <string name="save_passed_hint">Today\'s time has passed; reminders will start tomorrow</string>
+    <string name="banner_notify_title">Reminders can\'t reach you: notifications are off</string>
+    <string name="banner_notify_desc">Reminders are scheduled correctly, but system notifications are turned off, so nothing will alert you at the set time. Please allow notifications in Settings.</string>
+    <string name="banner_notify_action">Turn on notifications</string>
+    <string name="undo">Undo</string>
+    <string name="undo_deleted_msg">Deleted \"%1$s\"</string>
+    <string name="recorded_at">Recorded at %1$s</string>
+    <string name="detail_title">Medication details</string>
+    <string name="detail_adherence">30-day adherence</string>
+    <string name="detail_logs">Records</string>
+    <string name="no_logs">No records yet</string>
+    <string name="next_dose">Next: %1$s</string>
+    <string name="permission_notify_hint">Please grant notification permission to receive reminders on time</string>
+
+    <!-- Audit P1-2: strings previously hardcoded in Kotlin -->
+    <string name="exact_alarm_dialog_title">"Alarms &amp; reminders" permission required</string>
+    <string name="exact_alarm_dialog_msg">To be reminded at the exact medication time, please allow this app to set alarms and reminders in system settings.</string>
+    <string name="go_settings">Open settings</string>
+    <string name="notif_test_body">This is a test reminder. If you can see this notification and hear the sound, the reminder chain is working.</string>
+    <string name="alert_plan_prefix">Planned %1$s</string>
+    <string name="crash_title">The app crashed</string>
+    <string name="crash_copy">Copy log</string>
+    <string name="crash_copied">Crash log copied</string>
+    <string name="crash_log_file">Log file: %1$s</string>
+
+    <!-- Audit P1-2 (batch 2): main screens / editor / pickers / settings -->
+    <string name="today_no_plan">No doses planned today</string>
+    <string name="today_progress_fmt">%1$d planned · %2$d taken</string>
+    <string name="as_needed_tag">As needed</string>
+    <string name="history_prev_month">Previous month</string>
+    <string name="history_next_month">Next month</string>
+    <string name="history_ym_fmt">%1$s-%2$s</string>
+    <string name="history_recorded_suffix">Recorded %1$s</string>
+    <string name="meds_times_fmt">%1$d/day (%2$s)</string>
+    <string name="meds_duration_days">Course: %1$d days</string>
+    <string name="list_separator">", "</string>
+    <string name="section_other">Other</string>
+    <string name="section_theme">Theme</string>
+    <string name="section_general">General</string>
+    <string name="settings_language">Language</string>
+    <string name="language_system">System default</string>
+    <string name="section_data">Data</string>
+    <string name="settings_theme_style">Theme style</string>
+    <string name="settings_current_fmt">Current: %1$s</string>
+    <string name="settings_lead_current">Current: %1$d min</string>
+    <string name="settings_next_header">Upcoming reminders:</string>
+    <string name="theme_name_miuix">MIUIX (Xiaomi HyperOS)</string>
+    <string name="toast_export_failed">Export failed: %1$s</string>
+    <string name="toast_storage_denied">Storage permission not granted; cannot write to Downloads</string>
+    <string name="toast_import_open_failed">Cannot open the selected file</string>
+    <string name="toast_import_too_large">File too large (over 4 MB)</string>
+    <string name="toast_import_done">Imported %1$d records, created %2$d medications, skipped %3$d rows</string>
+    <string name="toast_import_failed">Import failed: %1$s</string>
+    <string name="settings_import_card_desc">Match medications by name and append to existing data</string>
+    <string name="settings_demo_card_desc">Quick tour: sample medications with 10 days of records</string>
+
+    <string-array name="history_weekdays">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <!-- i18n 新增（v1.1） -->
+
+    <string name="perm_exact_title">Alarm &amp; reminder permission required</string>
+    <string name="perm_exact_msg">To remind you at the exact medication time, please allow this app to set alarms and reminders in system settings.</string>
+    <string name="perm_notify_title">Notification permission required</string>
+    <string name="perm_notify_msg">Without notification permission you won\'t receive reminders. Please allow this app to send notifications in system settings.</string>
+
+    <string name="alert_plan">Scheduled %1$s</string>
+
+    <string name="detail_freq">Daily %1$d times (%2$s)</string>
+    <string name="detail_course">Course %1$d days</string>
+    <string name="detail_since">Since %1$s</string>
+
+    <string-array name="weekday_names">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="color_names">
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Pink</item>
+    </string-array>
+
+    <string-array name="icon_names">
+        <item>Pill</item>
+        <item>Capsule</item>
+        <item>Bottle</item>
+        <item>Drops</item>
+        <item>Injection</item>
+        <item>Inhaler</item>
+    </string-array>
+
+    <string-array name="form_names">
+        <item>Tablet</item>
+        <item>Capsule</item>
+        <item>Granules</item>
+        <item>Oral liquid</item>
+        <item>Injection</item>
+        <item>Drops</item>
+        <item>Inhaler</item>
+        <item>Topical</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Settings page additions (i18n completion) -->
+    <string name="settings_clear_desc">All medications and dose logs will be deleted and cannot be recovered</string>
+    <string name="settings_minutes_fmt">%1$d min</string>
+    <string name="settings_theme_dialog_title">Choose theme</string>
+    <string name="theme_name_material">Material Design</string>
+    <string name="theme_name_miuix_short">MIUIX (Xiaomi)</string>
+    <string name="settings_import_pick">Choose file</string>
+    <string name="settings_demo_confirm">Existing data found. Clear it before loading the sample data?</string>
+    <string name="toast_cleared">Cleared</string>
+    <string name="toast_demo_loaded">Sample data loaded</string>
+    <string name="settings_next_today">Today %1$s</string>
+    <string name="settings_next_tomorrow">Tomorrow %1$s</string>
+    <string name="settings_next_date">%1$d/%2$d %3$s</string>
+    <string name="export_file_prefix">MediTrack</string>
+    <string name="backup_dir_name">MediTrack Backup</string>
+    <string name="demo_med1_name">Metformin</string>
+    <string name="demo_med1_strength">0.5 g · 1 tablet</string>
+    <string name="demo_med1_notes">Take with meals to reduce stomach upset</string>
+    <string name="demo_med2_name">Atorvastatin</string>
+    <string name="demo_med2_strength">20 mg · 1 tablet</string>
+    <string name="demo_med2_notes">Take before bedtime</string>
+    <string name="demo_med3_name">Vitamin C</string>
+    <string name="demo_med3_strength">100 mg · 1 tablet</string>
+    <string name="demo_med4_name">Ibuprofen</string>
+    <string name="demo_med4_strength">0.3 g · 1 capsule</string>
+    <string name="demo_med4_notes">Take when in pain, max 4 times in 24 hours</string>
+    <string name="settings_about_title">MediTrack v1.0</string>
+    <string name="settings_about_local">Stored locally, never uploaded</string>
+    <string name="toast_undone">Undone</string>
+    <string name="stat_short_expected">Expected</string>
+    <string name="stat_short_taken">Taken</string>
+    <string name="stat_short_skipped">Skipped</string>
+</resources>

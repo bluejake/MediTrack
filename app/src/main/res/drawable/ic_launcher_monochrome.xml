@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  主题图标（单色层）：整颗胶囊的外轮廓，evenOdd 挖出中缝。
+  真机版此处是一体路径（上下两段合并为一条 M 曲线 + 中缝矩形），
+  与前景层（两段分开绘制）几何等价但只需一种纯色，便于系统按壁纸染色。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M31,48a23,23 0 0 1 46,0v12a23,23 0 0 1 -46,0zM26,50h56v8h-56z" />
+</vector>

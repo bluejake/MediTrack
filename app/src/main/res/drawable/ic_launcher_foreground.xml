@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  启动图标前景：双色胶囊（药丸），品牌识别来自「两段 + 中缝」。
+  设计约束（Android 自适应图标规范）：
+    - 画布 108×108dp；系统最坏遮罩只保留中心 66dp 直径圆。本图形胶囊 46×58 居中
+      于 (54,54)，最远点距圆心 29dp < 33dp，圆形/方圆/圆角方形遮罩下均不裁切。
+    - 中缝为 8dp 透明带（不画描边），缩到 48px 仍可辨认两段结构；
+      单色（主题图标）层用同一几何，仅保留形。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 上段：纯白，矩形顶边在 y=25（R23 端头） -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M31,48a23,23 0 0 1 46,0v2h-46z" />
+    <!-- 下段：淡蓝，与上段同形镜像，中间留 8dp 透明缝 -->
+    <path
+        android:fillColor="#FFD8E7FF"
+        android:pathData="M31,58h46v2a23,23 0 0 1 -46,0z" />
+</vector>

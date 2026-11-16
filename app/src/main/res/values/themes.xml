@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose 应用只需极简主题：窗口背景 + 状态栏；配色由 GlassTheme(Kotlin) 提供 -->
+    <style name="Theme.MediTrack" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg_grouped</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- 锁屏全屏服药提醒页（不透明、无切换动画） -->
+    <style name="Theme.MediTrack.Alert" parent="Theme.MediTrack">
+        <item name="android:windowBackground">@color/card_bg</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

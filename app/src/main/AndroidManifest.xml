@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <!-- 后台弹出提醒页：Android 的「后台启动 Activity」限制对持有该权限的应用豁免；
+         国产 ROM 里对应「后台弹出界面 / 悬浮窗」开关。缺失时锁屏提醒只能退化为通知。 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 弹窗用前台服务保活：精确闹钟触发时启动前台服务不受后台限制 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:theme="@style/Theme.MediTrack">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 锁屏全屏服药提醒页 -->
+        <activity
+            android:name=".reminder.ReminderAlertActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.MediTrack.Alert"
+            android:turnScreenOn="true" />
+
+        <!-- 崩溃详情页 -->
+        <activity
+            android:name=".ui.CrashActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":crash"
+            android:taskAffinity="" />
+
+        <!-- 闹钟触发 / 每日自检 -->
+        <receiver
+            android:name=".reminder.ReminderReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.medilog.app.action.REMIND" />
+                <action android:name="com.medilog.app.action.SNOOZE" />
+                <action android:name="com.medilog.app.action.TEST" />
+                <action android:name="com.medilog.app.action.DAILY_CHECK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 服药提醒弹窗（悬浮窗形态；锁屏时挂起，解锁后显示） -->
+        <service
+            android:name=".reminder.ReminderOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="medication_reminder_popup" />
+        </service>
+
+        <!-- 通知栏「已服用 / 稍后」动作 -->
+        <receiver
+            android:name=".reminder.ActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.medilog.app.action.TAKE" />
+                <action android:name="com.medilog.app.action.SNOOZE_USER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 开机 / 时间变更后重建闹钟 -->
+        <receiver
+            android:name=".reminder.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 自动备份排除规则（API 26–30 走 android:fullBackupContent）。
+  判定逻辑：domain="database" 指向应用私有数据库目录
+  (/data/data/com.medilog.app/databases/)，path 精确匹配文件名。
+  仅排除本应用的本地 SQLite 数据库（medilog.db 及其 WAL/SHM 同伴文件），
+  其余文件（SharedPreferences 提醒设置等）仍随自动备份保留。
+  排除原因见交付说明「D4 备份排除规则」。
+-->
+<full-backup-content>
+    <exclude domain="database" path="medilog.db" />
+    <exclude domain="database" path="medilog.db-wal" />
+    <exclude domain="database" path="medilog.db-shm" />
+</full-backup-content>

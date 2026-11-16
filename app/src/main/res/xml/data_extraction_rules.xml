@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  数据提取规则（API 31+ 走 android:dataExtractionRules）。
+  同时覆盖「云端备份 (cloud-backup)」与「设备间迁移 (device-transfer)」两种场景，
+  判定逻辑与 backup_rules.xml 一致：仅排除本地数据库 medilog.db 及其 WAL/SHM 同伴文件。
+  这样无论是 Google 云备份恢复，还是新机设备到设备迁移，都不会把旧数据库快照
+  覆盖到本机当前数据之上。
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="database" path="medilog.db" />
+        <exclude domain="database" path="medilog.db-wal" />
+        <exclude domain="database" path="medilog.db-shm" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="database" path="medilog.db" />
+        <exclude domain="database" path="medilog.db-wal" />
+        <exclude domain="database" path="medilog.db-shm" />
+    </device-transfer>
+</data-extraction-rules>

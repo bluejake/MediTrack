@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 环境光晕（深色）——2026-10-21 整改 + 2026-10-22 底部去暖：
+     黑底上玻璃极易发黑，需要发光色斑供折射；但内容区必须保持近黑，
+     不能形成色块拼布。 → 3 团贴边、大半径软渐隐。
+
+     2026-10-22 底部修正（MIUIX 染色 bug，深色模式下最明显）：
+     原底部「暖橙 #FF9F0A」团 alpha 17% 且正对液态玻璃导航栏，玻璃 vibrancy 放大色相 →
+     导航栏被染成橙色（实测 Dock 区域平均色 (44,33,21)，页面顶部中性 (17,17,17)），
+     底部半透明卡片同样泛暖。MIUIX 规范：底部导航应为中性表面。
+     → 底部团改为**中性灰 #8E8E93**、alpha 降到 8%、再下沉 80dp，
+     仅保留极淡尾迹供养玻璃折射，彻底消除色相污染。 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 左上 蓝（发光） -->
+    <item android:width="560dp" android:height="560dp" android:gravity="top|start"
+        android:left="-240dp" android:top="-220dp">
+        <shape android:shape="oval">
+            <gradient android:type="radial" android:gradientRadius="400dp"
+                android:startColor="#300A84FF" android:endColor="#000A84FF" />
+        </shape>
+    </item>
+    <!-- 右上 紫 -->
+    <item android:width="520dp" android:height="520dp" android:gravity="top|end"
+        android:right="-220dp" android:top="-80dp">
+        <shape android:shape="oval">
+            <gradient android:type="radial" android:gradientRadius="380dp"
+                android:startColor="#2CBF5AF2" android:endColor="#00BF5AF2" />
+        </shape>
+    </item>
+    <!-- 底部 中性灰（替代原暖橙团：只供养玻璃折射，不贡献色相，见顶部说明） -->
+    <item android:width="640dp" android:height="640dp" android:gravity="bottom|center_horizontal"
+        android:bottom="-380dp">
+        <shape android:shape="oval">
+            <gradient android:type="radial" android:gradientRadius="420dp"
+                android:startColor="#148E8E93" android:endColor="#008E8E93" />
+        </shape>
+    </item>
+</layer-list>

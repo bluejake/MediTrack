@@ -1,0 +1,35 @@
+# ── 签名密钥：绝不允许进版本库 / 交接包 ──
+*.jks
+*.keystore
+keystore.properties
+keystore.properties.*
+local.properties
+
+# ── 构建产物 ──
+/build
+/app/build
+/.gradle
+/.kotlin
+/app/.cxx
+.cxx
+
+# ── 还原过程的中间产物（arsc dump、提取的二进制资源、截图）──
+/_tmp
+
+# ── 测试残留：临时数据库（tools/*.py 从设备 pull 下来的副本）──
+*.db
+*.db-journal
+*.db-wal
+
+# ── Python 缓存 ──
+__pycache__/
+*.pyc
+
+# ── IDE ──
+/.idea
+*.iml
+/.vscode
+
+# ── 系统文件 ──
+.DS_Store
+Thumbs.db

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 resources.arsc 反解还原（2026-11-10），取值与 10-26 debug 包一致 -->
+<resources>
+    <color name="bg_grouped">#FFF2F2F7</color>
+    <color name="card_bg">#FFFFFFFF</color>
+    <color name="card_bg_secondary">#FFFAFAFC</color>
+    <color name="chip_track">#FFE9E9EA</color>
+    <color name="divider">#FFE5E5EA</color>
+    <color name="fill_quaternary">#7878801F</color>
+    <color name="fill_secondary">#78788052</color>
+    <color name="fill_tertiary">#78788033</color>
+    <color name="glass_dialog">#E6FFFFFF</color>
+    <color name="glass_field">#FFF2F2F7</color>
+    <color name="glass_fill">#C4FFFFFF</color>
+    <color name="glass_rim">#FFDBDBDB</color>
+    <color name="glass_tabbar">#D9FFFFFF</color>
+    <color name="gray">#FF8E8E93</color>
+    <color name="green">#FF34C759</color>
+    <color name="indigo">#FF5856D6</color>
+    <color name="launcher_bg">#FF007AFF</color>
+    <color name="mint">#FF00C7BE</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="on_primary_container">#FF0A5CBF</color>
+    <color name="on_secondary">#FFFFFFFF</color>
+    <color name="on_secondary_container">#FF2E2C8F</color>
+    <color name="on_tertiary">#FFFFFFFF</color>
+    <color name="orange">#FFFF9500</color>
+    <color name="pink">#FFFF2D55</color>
+    <color name="primary">#FF007AFF</color>
+    <color name="primary_container">#FFE3F0FF</color>
+    <color name="primary_tint">#1F007AFF</color>
+    <color name="purple">#FFAF52DE</color>
+    <color name="red">#FFFF3B30</color>
+    <color name="secondary">#FF5856D6</color>
+    <color name="secondary_container">#FFE8E8FA</color>
+    <color name="surface_variant">#FFEFEFF4</color>
+    <color name="teal">#FF30B0C7</color>
+    <color name="tertiary">#FF00C7BE</color>
+    <color name="text_primary">#FF1C1C1E</color>
+    <color name="text_secondary">#FF8E8E93</color>
+    <color name="text_tertiary">#FFC7C7CC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFCC00</color>
+</resources>
